@@ -1,13 +1,13 @@
-var a = function typeOf (b) {
-  if (typeof b === "string") {
-    console.log("String");
-  } else if (isNaN(b)) {
-    console.log("Undefined");
-  } else if (typeof b === "number") {
-    console.log("Number");
-  } else {
-    console.log("Undefined");
-  }
+function typeOf (a) {
+	var result;
+	if (typeof a === "string") {
+		result = "string";
+	} else if ((typeof a === "number") && (isNaN(a) !== true)){
+		result = "number";
+	} else {
+		result = undefined;
+	}
+	return result;
 };
 
 module.exports = typeOf;

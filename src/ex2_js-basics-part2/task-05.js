@@ -1,9 +1,8 @@
 function maxElement(array){
     var max = array[0];
-    var a;
-    for (a = 1; a < array.length; a++){
-        if (array[a] >= max){
-            max = array[a];
+    for (var i = 1; i < array.length; i++){
+        if (array[i] >= max){
+            max = array[i];
         }
     }
     return max;

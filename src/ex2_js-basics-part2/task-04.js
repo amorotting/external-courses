@@ -1,7 +1,6 @@
 function equalElements(array){
-    var m;
-    for (m = 1; m < array.length; m++){
-        if (array[m] !== array[0]){
+    for (var i = 1; i < array.length; i++){
+        if (array[i] !== array[0]){
             return false;
         }
     } 

@@ -1,14 +1,14 @@
 function evenOdd (array){
 	var oddEvenZero = [0, 0, 0];
-    var a, r;
-    for(a = 0; a < array.length; a++){
-		if (array[a] === 0) {
+    var rest;
+    for(var i = 0; i < array.length; i++){
+		if (array[i] === 0) {
 			oddEvenZero[2]++;
-		} else if (array[a]!== null){
-			r = array[a] % 2;
-			if (r === 1){
+		} else if (array[i]!== null){
+			rest = array[i] % 2;
+			if (rest === 1){
 				oddEvenZero[1]++;
-			} else if (r === 0){
+			} else if (rest === 0){
 				oddEvenZero[0]++;
 			}
 		} 

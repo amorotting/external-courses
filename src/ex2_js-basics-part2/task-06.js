@@ -1,5 +1,4 @@
 function isPrime(number){
-    var r;
     if (number > 1000){
         return "Данные неверны";
     }
@@ -7,8 +6,8 @@ function isPrime(number){
         return "Число - не простое и не составное"
     }
 
-    for (r = 2; r < number; r++){
-        if ((number % r) === 0){
+    for (var i = 2; i < number; i++){
+        if ((number % i) === 0){
             return "Число " + number + " - составное число";
         } 
     }
