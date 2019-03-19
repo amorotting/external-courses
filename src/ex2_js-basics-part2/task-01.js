@@ -4,8 +4,6 @@ function typeOf (a) {
 		result = "string";
 	} else if (typeof a === "number" && isNaN(a) !== true){
 		result = "number";
-	} else {
-		result = undefined;
 	}
 	return result;
 };
