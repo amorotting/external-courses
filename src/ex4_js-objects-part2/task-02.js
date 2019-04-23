@@ -1,6 +1,5 @@
 function makeNewObj(){
-    var newObj1 = Object.create(null);
-    return newObj1;
+    return Object.create(null);
 }
 
 module.exports = makeNewObj;

@@ -1,4 +1,4 @@
-function trimmedString(str){
-    return str.trim();
+function deleteBackspace(str){
+    return str.slice(1,str.length-1);
 }
-module.exports = trimmedString;
+module.exports = deleteBackspace;

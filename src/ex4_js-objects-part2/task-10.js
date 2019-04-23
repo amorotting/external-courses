@@ -3,8 +3,7 @@ function turnOver(str){
     var turned = [];
     var turnedStr;
     var x = str.length;
-    var i;
-    for ( i = x - 1, j = 0; i >= 0; i--){
+    for (var i = x - 1, j = 0; i >= 0; i--){
         turned[j] = strArray[i];
         j++;
     }

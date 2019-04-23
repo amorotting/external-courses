@@ -9,7 +9,7 @@ function countElememtsRegularity(str){
         }
     }
 	for (var prop in obj) {
-        console.log(prop + obj[prop]);
+        console.log("элемент" + " " + prop + " " + "встречается" + " " + obj[prop] + " " + "раза");;
     }
     return obj;
 }
